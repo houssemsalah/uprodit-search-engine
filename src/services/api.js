@@ -6,7 +6,7 @@ const APP_ID = 'challenge_uprodit';
 const ENVIRONMENT = 'production';
 const USE_CASE = 'perso';
 
-const searchAll = async (terms) => {
+export const searchAll = async (terms) => {
     console.log('terms = ',terms)
     if(terms==null){
         terms=''
@@ -28,7 +28,7 @@ const searchAll = async (terms) => {
 };
 
 
-const getProfilePicture = async (id) => {
+export const getProfilePicture = async (id) => {
     try {
       const signature = generateSignature(APP_ID, ENVIRONMENT, `${BASE_URL}/v2/profile/picture/f/${id}`);
       const response = await fetch(`${BASE_URL}/v2/profile/picture/f/${id}`, {
@@ -49,4 +49,4 @@ const getProfilePicture = async (id) => {
   };
 
 
-module.exports = { searchAll, getProfilePicture };
+

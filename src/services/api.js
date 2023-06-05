@@ -7,7 +7,7 @@ const ENVIRONMENT = 'production';
 const USE_CASE = 'perso';
 
 export const searchAll = async (terms) => {
-    console.log('terms = ',terms)
+
     if(terms==null){
         terms=''
       }

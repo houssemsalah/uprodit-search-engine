@@ -1,4 +1,4 @@
-//const fetch = require('node-fetch');
+
 const generateSignature = require('./generateSignature');
 
 const BASE_URL = 'https://api.uprodit.com';
@@ -36,12 +36,12 @@ export const getProfilePicture = async (id) => {
           Authorization: signature
         }
       });
-      const data = await response.json(); // Read response as text
+      const data = await response.json(); 
     //  console.log('getProfilePicture = ', data.b64Content);
       if(data.b64Content==null){
         return null
       }
-      return `data:image/png;base64,${data.b64Content}`; // Return Base64 data
+      return `data:image/png;base64,${data.b64Content}`; 
     } catch (error) {
       console.error('Error fetching profile picture:', error);
       return '';

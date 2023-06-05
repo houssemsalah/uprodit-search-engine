@@ -26,7 +26,7 @@ const SearchBar = ({ onSearch }) => {
         onSearch={handleSearch}
         enterButton={<SearchOutlined style={{ fontSize: '1.2rem' }} />}
         size="large"
-        style={{ width: '800px', marginRight: '1rem' }} // Update the width value here
+        style={{ width: '800px', marginRight: '1rem' }} 
       />
     </div>
   );

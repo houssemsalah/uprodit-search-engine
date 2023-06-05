@@ -16,6 +16,8 @@
  
  ![clone repository](./src/assets/clone.png)
 
+<img src="./src/assets/clone.png" alt="Image Description" height="50" />
+
 ### 2. Install Dependencies
 
 cd uprodit-search-engine

@@ -6,10 +6,10 @@ const SearchResults = ({ results, loading }) => {
   const renderResults = () => {
   
     if (loading) {
-      return <p>Loading ..</p>;
+      return <p style={{display:"flex" , justifyContent:"center"  ,margin:"200px",fontSize:"30px" }}>Loading ..</p>;
     }
     if (results?.length === 0) {
-      return <p>No results found.</p>;
+      return <p p style={{display:"flex" , justifyContent:"center"  ,margin:"200px",fontSize:"30px" }}>No results found.</p>;
     }
    
     return (

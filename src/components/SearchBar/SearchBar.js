@@ -6,15 +6,7 @@ const SearchBar = ({ onSearch }) => {
   const [searchValue, setSearchValue] = useState('');
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const searchResults = await onSearch();
-      } catch (error) {
-        console.error('Error fetching search results:', error);
-      }
-    };
-
-    fetchData();
+  onSearch();
   }, []);
 
   const handleSearch = () => {

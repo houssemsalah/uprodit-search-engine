@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
 import SearchResults from './pages/SearchResults/SearchResults';
 import { searchAll } from './services/api';
 
@@ -22,8 +21,8 @@ const App = () => {
       <div>
         <Navbar onSearch={handleSearch} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/search" element={<SearchResults results={searchResults} />} />
+         
+          <Route path="/" element={<SearchResults results={searchResults} />} />
         </Routes>
       </div>
     </Router>

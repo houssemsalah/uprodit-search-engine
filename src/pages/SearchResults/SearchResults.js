@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { searchAll, getProfilePicture } from '../../services/api';
+import React from 'react';
 import SearchResult from '../../components/SearchResult/SearchResult';
 
 const SearchResults = ({ results, onSearch }) => {

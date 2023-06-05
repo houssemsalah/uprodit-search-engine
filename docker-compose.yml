@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  uprodit-search-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uprodit-search-engine_container
+    environment:
+      - NODE_ENV=production
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true

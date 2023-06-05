@@ -1,10 +1,10 @@
-FROM node:14
+FROM node:14.17.6
 
 WORKDIR /uprodit-challenge
 
 COPY package.json .
 
-RUN nom install
+RUN npm install
 
 COPY . .
 

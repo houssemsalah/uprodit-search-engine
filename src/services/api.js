@@ -12,8 +12,8 @@ export const searchAll = async (terms) => {
         terms=''
       }
   try {
-    const signature = generateSignature(APP_ID, ENVIRONMENT, `${BASE_URL}/v1/search/all?startIndex=0&maxResults=20&usecase=perso&terms=${terms}`);
-  const response = await fetch(`${BASE_URL}/v1/search/all?startIndex=0&maxResults=20&usecase=perso&terms=${terms}`, {
+    const signature = generateSignature(APP_ID, ENVIRONMENT, `${BASE_URL}/v1/search/all?startIndex=0&maxResults=50&usecase=${USE_CASE}&terms=${terms}`);
+  const response = await fetch(`${BASE_URL}/v1/search/all?startIndex=0&maxResults=50&usecase=${USE_CASE}&terms=${terms}`, {
       headers: {
         Authorization: signature
       }

@@ -1,8 +1,8 @@
 // Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Layout, Menu, Button } from 'antd';
-import { HomeOutlined, SearchOutlined, LogoutOutlined } from '@ant-design/icons';
+import { Layout } from 'antd';
+
 import SearchBar from '../SearchBar/SearchBar';
 
 const { Header } = Layout;

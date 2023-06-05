@@ -14,28 +14,30 @@
 
  git clone https://github.com/houssemsalah/uprodit-search-engine.git
  
- ![clone repository](./src/assets/clone.png)
-
 <img src="./src/assets/clone.png" alt="Image Description" height="150" />
 
 ### 2. Install Dependencies
 
 cd uprodit-search-engine
-![access project folder ](./src/assets/cd.png)
+
+<img src="./src/assets/cd.png" alt="Image Description" height="150" />
 
 npm install
-![install packages](./src/assets/install.png)
+
+<img src="./src/assets/install.png" alt="Image Description" height="150" />
 ### 3. Start the Development Server
 
 npm start
-![start server](./src/assets/start.png)
+
+<img src="./src/assets/start.png" alt="Image Description" height="150" />
 
 <!-- This will start the development server and the application will be accessible at http://localhost:3000 in your web browser. -->
 
 ### 4. Building the Application
 
 npm run build
-![build app](./src/assets/build.png)
+
+<img src="./src/assets/build.png" alt="Image Description" height="150" />
 
 <!-- This command will create a production-ready build of the application in the build directory. -->
 
@@ -44,12 +46,14 @@ npm run build
    #### Build the Docker Image
 
 docker build -t uprodit-search-engine .
-![docker build](./src/assets/docker-build.png)
+
+<img src="./src/assets/docker-build.png" alt="Image Description" height="150" />
 
    #### Run the Docker Container
 
 docker run -p 3000:3000 uprodit-search-engine
-![docker run](./src/assets/docker-run.png)
+
+<img src="./src/assets/docker-run.png" alt="Image Description" height="150" />
 <!-- The application will be accessible at http://localhost in your web browser. -->
 
 ### 6. Screenshots

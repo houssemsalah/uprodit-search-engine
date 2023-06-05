@@ -17,12 +17,12 @@ const ProfilePicture = ({ imageId }) => {
           }
         }; 
             getPicture();
-        }, []);
+        });
   return (
     <div  style={{display:'flex',justifyContent:'center'}}>
         {
        
-            <img src={picture||DefaultPicture} alt="Profile picture" style={{ width: '350px', height: '300px', objectFit: 'cover',borderRadius:"5px" }} />
+            <img src={picture||DefaultPicture} alt="picture" style={{ width: '350px', height: '300px', objectFit: 'cover',borderRadius:"5px" }} />
       
             
       }

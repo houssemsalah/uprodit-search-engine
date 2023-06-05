@@ -16,7 +16,7 @@
  
  ![clone repository](./src/assets/clone.png)
 
-<img src="./src/assets/clone.png" alt="Image Description" height="50" />
+<img src="./src/assets/clone.png" alt="Image Description" height="100" />
 
 ### 2. Install Dependencies
 

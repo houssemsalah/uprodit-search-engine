@@ -8,12 +8,17 @@ const App = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(true);
   const handleSearch = async (query) => {
+    
     try {
+     
+      setLoading(true)
+      console.log("Fetching search results");
       const results = await searchAll(query);
       setSearchResults(results);
       setLoading(false)
     } catch (error) {
       console.error('Error fetching search results:', error);
+      setLoading(false)
     }
   };
 

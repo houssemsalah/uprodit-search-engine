@@ -7,6 +7,7 @@ import ProfilePicture from './../ProfilePicture/ProfilePicture';
 
 
 const SearchResult = ({ data }) => {
+  
   return (
     <Card sx={{ maxWidth: 300,maxHeight:490 , position: 'relative' }}>
       <ProfilePicture imageId={data.image_id} />

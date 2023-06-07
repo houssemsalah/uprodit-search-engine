@@ -15,7 +15,7 @@ const SearchResults = ({ results, loading }) => {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', margin: '30px' }}>
         {results?.map((result) => (
-          <SearchResult data={result} key={result.id} />
+          <SearchResult data={result}  />
         ))}
       </div>
     );

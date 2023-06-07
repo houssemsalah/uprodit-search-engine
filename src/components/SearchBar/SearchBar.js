@@ -7,13 +7,14 @@ const SearchBar = ({ onSearch }) => {
 
   useEffect(() => {
   onSearch();
-  } );
+  } ,[1]);
 
   const handleSearch = () => {
     onSearch(searchValue);
   };
 
   const handleChange = (e) => {
+    console.log("clicked")
     setSearchValue(e.target.value);
   };
 

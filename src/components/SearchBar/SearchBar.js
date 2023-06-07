@@ -7,7 +7,7 @@ const SearchBar = ({ onSearch }) => {
 
   useEffect(() => {
   onSearch();
-  } ,[1]);
+  } ,[]);
 
   const handleSearch = () => {
     onSearch(searchValue);

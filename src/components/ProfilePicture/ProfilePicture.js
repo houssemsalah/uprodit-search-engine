@@ -22,7 +22,7 @@ const ProfilePicture = ({ imageId }) => {
     <div  style={{display:'flex',justifyContent:'center'}}>
         {
        
-            <img src={picture||DefaultPicture}  style={{ width: '350px', height: '300px', objectFit: 'cover',borderRadius:"5px" }} />
+            <img src={picture||DefaultPicture} alt="" style={{ width: '350px', height: '300px', objectFit: 'cover',borderRadius:"5px" }} />
       
             
       }

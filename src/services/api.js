@@ -37,7 +37,7 @@ export const getProfilePicture = async (id) => {
         }
       });
       const data = await response.json(); 
-   //   console.log('getProfilePicture func= ');
+      console.log('getProfilePicture func= ');
       if(data.b64Content==null){
         return null
       }

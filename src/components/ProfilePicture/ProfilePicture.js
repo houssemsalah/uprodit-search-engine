@@ -11,7 +11,7 @@ const ProfilePicture = ({ imageId }) => {
           try {
             const pic = await getProfilePicture(imageId);
             setPicture(pic)
-      //      console.log("get pic")
+           console.log("get pic")
           } catch (error) {
             console.error('Error fetching picture results:', error);
           

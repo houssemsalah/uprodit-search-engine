@@ -3,10 +3,11 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  CI: false  # Set CI environment variable to false
 
 jobs:
   build-and-deploy:
@@ -16,11 +17,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set environment variables
+        run: echo "CI=false" >> $GITHUB_ENV  # Set CI environment variable to false
+
       - name: Install dependencies
-        run: npm ci  
+        run: npm ci  # Replace with the command to install your project dependencies
 
       - name: Build
-        run: npm run build 
+        run: npm run build  # Replace with the command to build your project
 
       - name: Deploy to Netlify
         run: npx netlify deploy --prod --auth "$NETLIFY_AUTH_TOKEN"
